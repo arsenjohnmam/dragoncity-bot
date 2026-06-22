@@ -1,4 +1,9 @@
-import pyautogui
+try:
+    import pyautogui
+except ImportError:
+    print("Error: pyautogui module not found. Install it using: pip install pyautogui")
+    sys.exit(1)
+
 import sys
 import tkinter as tk
 from tkinter import messagebox
